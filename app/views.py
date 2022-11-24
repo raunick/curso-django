@@ -1,10 +1,15 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+# from django.http import HttpResponse
+# Create your views here.
 
 
-def view(request):
-    return render(request, 'home.html')
+def home(response):
+    return render(response, 'home.html')
 
 
-def contato(request):
-    return render(request, 'index.html')
+def painel(response):
+    return render(response, 'painel.html')
+
+
+def contato(response):
+    return render(response, 'contato.html')
